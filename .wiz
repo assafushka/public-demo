@@ -1,0 +1,22 @@
+ignore:
+  vulnerabilities:
+    CVE-2024-3817:
+      /vulns/go.mod:
+        reason: this is nonsense
+        expires: null
+    CVE-2024-6257:
+      /vulns/go.mod:
+        reason: this is nonsense
+        expires: null
+  iac: {}
+  sensitive_data:
+    BUILTIN-188:
+      /data/emails_and_creditcards-2.csv:
+        reason: ignore this one
+        expires: null
+  secrets:
+    SECRET-SYSTEM-1:
+      /.aws_credentials:
+        reason: i don't care about this one
+        expires: null
+  global_paths: {}
