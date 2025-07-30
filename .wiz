@@ -1,5 +1,5 @@
 ignore:
   secrets:
     SECRET-SYSTEM-1:
-      /credentials:
+      /demo-app/deploy/credentials:
         reason: EXCEPTION
