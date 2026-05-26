@@ -14,7 +14,7 @@ resource "aws_s3_bucket_public_access_block" "mongodb_backups" {
 
 resource "aws_s3_bucket_acl" "mongodb_backups" {
   bucket = aws_s3_bucket.mongodb_backups.id
-  acl    = "public-read"
+  acl    = "private"
 }
 
 resource "aws_s3_bucket_policy" "allow_public_access" {
